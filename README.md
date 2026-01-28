@@ -6,10 +6,10 @@ The automated tool that turns your Excel sheets into production-ready Postman Co
 ---
 
 ## 🌟 Quick Start
-
-1.  **Get Template**: Click the button in the app to download the `.xlsx` file.
-2.  **Fill Data**: Open it in Excel and add your API details.
-3.  **Generate**: detailed instructions below.
+1.  **Click on the link**: https://xlsx-to-api-generator-frontend.vercel.app/
+2.  **Get Template**: Click the button in the app to download the `.xlsx` file.
+3.  **Fill Data**: Open it in Excel and add your API details.
+4.  **Generate**: detailed instructions below.
 
 ---
 
