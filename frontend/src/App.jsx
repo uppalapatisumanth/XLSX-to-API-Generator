@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Upload, FileText, Code, CheckCircle, AlertCircle, Loader2, Download, HelpCircle, X, Sparkles, Zap, LayoutTemplate } from 'lucide-react';
+import { API_BASE_URL } from './config';
 
 function App() {
     const [file, setFile] = useState(null);
@@ -28,7 +29,7 @@ function App() {
         formData.append('file', file);
 
         try {
-            const response = await axios.post('/api/upload', formData, {
+            const response = await axios.post(`${API_BASE_URL}/api/upload`, formData, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             setTaskId(response.data.task_id);
@@ -43,7 +44,7 @@ function App() {
         if (taskId && stage === 'processing') {
             interval = setInterval(async () => {
                 try {
-                    const res = await axios.get(`/api/status/${taskId}`);
+                    const res = await axios.get(`${API_BASE_URL}/api/status/${taskId}`);
                     setLogs(res.data.logs);
 
                     if (res.data.status === 'completed') {
@@ -67,7 +68,7 @@ function App() {
     }, [taskId, stage]);
 
     const downloadFile = (type) => {
-        window.open(`/api/download/${taskId}/${type}`, '_blank');
+        window.open(`${API_BASE_URL}/api/download/${taskId}/${type}`, '_blank');
     };
 
     return (
@@ -155,7 +156,7 @@ function App() {
                         </div>
 
                         <div className="mt-6">
-                            <a href="http://localhost:8000/api/template" target="_blank" className="text-sm font-semibold text-slate-400 hover:text-violet-600 transition-colors inline-flex items-center gap-1">
+                            <a href={`${API_BASE_URL}/api/template`} target="_blank" className="text-sm font-semibold text-slate-400 hover:text-violet-600 transition-colors inline-flex items-center gap-1">
                                 <Download className="w-3 h-3" />
                                 Get Template
                             </a>
@@ -290,7 +291,7 @@ function App() {
                                 <div className="col-span-1">
                                     <div className="sticky top-0 space-y-4">
                                         <div
-                                            onClick={() => window.open('http://localhost:8000/api/template', '_blank')}
+                                            onClick={() => window.open(`${API_BASE_URL}/api/template`, '_blank')}
                                             className="p-4 rounded-2xl bg-indigo-50 border border-indigo-100 text-indigo-900 cursor-pointer hover:bg-indigo-100 hover:scale-[1.02] transition-all group"
                                         >
                                             <div className="flex justify-between items-start">
@@ -301,7 +302,7 @@ function App() {
                                             <p className="text-sm opacity-80 mt-1">Ensure your file has exact sheet names.</p>
                                         </div>
                                         <div
-                                            onClick={() => window.open('http://localhost:8000/api/template', '_blank')}
+                                            onClick={() => window.open(`${API_BASE_URL}/api/template`, '_blank')}
                                             className="p-4 rounded-2xl bg-white border border-slate-100 text-slate-600 shadow-sm cursor-pointer hover:border-indigo-300 hover:shadow-md hover:scale-[1.02] transition-all group"
                                         >
                                             <div className="flex justify-between items-start">
@@ -314,7 +315,7 @@ function App() {
 
                                         <div className="pt-4">
                                             <button
-                                                onClick={() => window.open('http://localhost:8000/api/template', '_blank')}
+                                                onClick={() => window.open(`${API_BASE_URL}/api/template`, '_blank')}
                                                 className="w-full py-3 px-4 bg-slate-900 text-white rounded-xl font-bold text-sm hover:bg-slate-800 transition-all flex items-center justify-center gap-2 shadow-lg shadow-slate-200"
                                             >
                                                 <Download className="w-4 h-4" />
