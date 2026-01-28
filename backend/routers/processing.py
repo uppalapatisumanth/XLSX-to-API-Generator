@@ -8,7 +8,7 @@ import os
 import shutil
 import json
 from pathlib import Path
-from services import parser, postman_generator, pytest_generator
+from backend.services import parser, postman_generator, pytest_generator
 
 router = APIRouter(prefix="/api", tags=["processing"])
 
