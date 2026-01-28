@@ -1,0 +1,71 @@
+{
+    "info": {
+        "_postman_id": "-5017550338772703588",
+        "name": "Generated from sample_api_template (2).xlsx",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "General",
+            "item": [
+                {
+                    "name": "fetchEmplLeaveRequestList",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{basic url}}/rest/v2/dailybiz/fetchEmplLeaveRequestList",
+                            "host": [
+                                "{{basic url}}"
+                            ],
+                            "path": [
+                                "rest",
+                                "v2",
+                                "dailybiz",
+                                "fetchEmplLeaveRequestList"
+                            ],
+                            "query": []
+                        },
+                        "description": "Request for fetchEmplLeaveRequestList",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"tenantId\": \"MANMUL-TEST4\",\n    \"partyId\": 927,\n    \"fromDate\": \"01-December-2025\",\n    \"thruDate\": \"31-December-2025\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Successful request\", function () {",
+                                    "    pm.expect(pm.response.code).to.be.oneOf([200, 200, 201]);",
+                                    "});",
+                                    "// Token Generator for variable: token",
+                                    "var jsonData = pm.response.json();",
+                                    "if (jsonData.token) { pm.collectionVariables.set(\"token\", jsonData.token); }",
+                                    "else if (jsonData.token) { pm.collectionVariables.set(\"token\", jsonData.token); }",
+                                    "else if (jsonData.access_token) { pm.collectionVariables.set(\"token\", jsonData.access_token); }",
+                                    "pm.test(\"Body contains expected text\", function () {",
+                                    "    pm.expect(pm.response.text()).to.include(\"{'employeeLeavesResult': {'employeeId': '927', 'labelList': [{'labelName': 'Pending', 'labelValue': 4}, {'labelName': 'Recommend', 'labelValue': 0}, {'labelName': 'Verified', 'labelValue': 6}, {'labelName': 'Approved', 'labelValue': 5}, {'labelName': 'Rejected', 'labelValue': 0}, {'labelName': 'Created', 'labelValue': 0}, {'labelName': 'All', 'labelValue': 15}], 'leaveList': [{'leaveTypeDesc': 'Casual Leave', 'partyId': '1061', 'partyName': 'RAGHU D R', 'leaveTypeId': 'CL', 'leaveStatus': 'Approved', 'leaveFromDate': 'Dec 05, 2025', 'leaveThruDate': 'Dec 05, 2025', 'comment': None, 'emplLeaveApplId': '35736', 'appliedDate': 'Dec 06, 2025', 'leaveCountDays': 1.0, 'status': 'Approved', 'nextLevelStatusList': [{'id': 'LEAVE_REJECTED', 'description': 'REJECTED'}, {'id': 'LEAVE_REJECTED', 'description': 'REJECTED'}]}]}}\");",
+                                    "});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "info": {
+        "_postman_id": "31993906964584962",
+        "name": "Generated from sample_api_template (1).xlsx",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "General",
+            "item": [
+                {
+                    "name": "getAuthToken",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{basic url}}/rest/suprabhat/V2/getAuthToken",
+                            "host": [
+                                "{{basic url}}"
+                            ],
+                            "path": [
+                                "rest",
+                                "suprabhat",
+                                "V2",
+                                "getAuthToken"
+                            ],
+                            "query": []
+                        },
+                        "description": "Request for getAuthToken",
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "login.username",
+                                    "value": "Invoice2",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "login.password",
+                                    "value": "vst123",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "tenantId",
+                                    "value": "suprabhat-latest",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Successful request\", function () {",
+                                    "    pm.expect(pm.response.code).to.be.oneOf([200, 200, 201]);",
+                                    "});",
+                                    "// Auto-detected Authentication API",
+                                    "var jsonData = pm.response.json();",
+                                    "if (jsonData.token) { pm.globals.set(\"token\", jsonData.token); }",
+                                    "if (jsonData.access_token) { pm.globals.set(\"token\", jsonData.access_token); }",
+                                    "pm.test(\"Body contains expected text\", function () {",
+                                    "    pm.expect(pm.response.text()).to.include(\"{'token': '<JWT_TOKEN>', 'responseMessage': 'success'}\");",
+                                    "});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

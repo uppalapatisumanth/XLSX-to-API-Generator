@@ -1,0 +1,2217 @@
+{
+    "370af4ea-0822-46c0-b86c-61ad2af6f59f": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 3 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\370af4ea-0822-46c0-b86c-61ad2af6f59f\\postman_collection.json",
+            "pytest": "artifacts_storage\\370af4ea-0822-46c0-b86c-61ad2af6f59f\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "getAuthToken",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/getAuthToken",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<JWT_TOKEN>",
+                    "responseMessage": "success"
+                },
+                "status": 200,
+                "url_params": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                }
+            },
+            {
+                "name": "getUserDetails",
+                "method": "GET",
+                "url": "/rest/suprabhat/V2/getUserDetails",
+                "ref_id": "",
+                "module": "General",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "Authorization": "Bearer <token>"
+                },
+                "expected_response": {
+                    "username": "user123",
+                    "email": "test@example.com"
+                },
+                "status": 200,
+                "url_params": {}
+            },
+            {
+                "name": "createUser",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/createUser",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "username": "newuser",
+                    "role": "admin"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "id": 101,
+                    "status": "created"
+                },
+                "status": 200,
+                "url_params": {}
+            }
+        ]
+    },
+    "b68ede6f-253c-4e3d-a95e-3eea2a77932a": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 1 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\b68ede6f-253c-4e3d-a95e-3eea2a77932a\\postman_collection.json",
+            "pytest": "artifacts_storage\\b68ede6f-253c-4e3d-a95e-3eea2a77932a\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "getAuthToken",
+                "method": "POST",
+                "url": "https://master.suprabhatapp.in/rest/suprabhat/V2/getAuthToken",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "login.username": "Invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<JWT_TOKEN>",
+                    "responseMessage": "success"
+                },
+                "status": 200,
+                "url_params": {
+                    "login.username": "Invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                }
+            }
+        ]
+    },
+    "f1b22559-7051-4616-9842-576ae83d6783": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 4 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\f1b22559-7051-4616-9842-576ae83d6783\\postman_collection.json",
+            "pytest": "artifacts_storage\\f1b22559-7051-4616-9842-576ae83d6783\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "getAuthToken",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/getAuthToken",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<JWT_TOKEN>",
+                    "responseMessage": "success"
+                },
+                "status": 200,
+                "url_params": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                }
+            },
+            {
+                "name": "getUserDetails",
+                "method": "GET",
+                "url": "/rest/suprabhat/V2/getUserDetails",
+                "ref_id": "",
+                "module": "General",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "Authorization": "Bearer <token>"
+                },
+                "expected_response": {
+                    "username": "user123",
+                    "email": "test@example.com"
+                },
+                "status": 200,
+                "url_params": {}
+            },
+            {
+                "name": "createUser",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/createUser",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "username": "newuser",
+                    "role": "admin"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "id": 101,
+                    "status": "created"
+                },
+                "status": 200,
+                "url_params": {}
+            },
+            {
+                "name": "fetchEmplLeaveRequestList",
+                "method": "GET",
+                "url": "rest/v2/dailybiz",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "tenantId": "MANMUL-TEST4",
+                    "partyId": 927,
+                    "fromDate": "01-December-2025",
+                    "thruDate": "31-December-2025"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "employeeLeavesResult": {
+                        "employeeId": "927",
+                        "labelList": [
+                            {
+                                "labelName": "Pending",
+                                "labelValue": 4
+                            },
+                            {
+                                "labelName": "Recommend",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "Verified",
+                                "labelValue": 6
+                            },
+                            {
+                                "labelName": "Approved",
+                                "labelValue": 5
+                            },
+                            {
+                                "labelName": "Rejected",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "Created",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "All",
+                                "labelValue": 15
+                            }
+                        ],
+                        "leaveList": [
+                            {
+                                "leaveTypeDesc": "Casual Leave",
+                                "partyId": "1061",
+                                "partyName": "RAGHU D R",
+                                "leaveTypeId": "CL",
+                                "leaveStatus": "Approved",
+                                "leaveFromDate": "Dec 05, 2025",
+                                "leaveThruDate": "Dec 05, 2025",
+                                "comment": null,
+                                "emplLeaveApplId": "35736",
+                                "appliedDate": "Dec 06, 2025",
+                                "leaveCountDays": 1.0,
+                                "status": "Approved",
+                                "nextLevelStatusList": [
+                                    {
+                                        "id": "LEAVE_REJECTED",
+                                        "description": "REJECTED"
+                                    },
+                                    {
+                                        "id": "LEAVE_REJECTED",
+                                        "description": "REJECTED"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "status": 200,
+                "url_params": {
+                    "tenantId": "MANMUL-TEST4",
+                    "partyId": 927,
+                    "fromDate": "01-December-2025",
+                    "thruDate": "31-December-2025"
+                }
+            }
+        ]
+    },
+    "a25f466f-a9f8-453b-80c1-6bea568ba2ab": {
+        "status": "failed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 1 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "ERROR: name '_create_file' is not defined"
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\a25f466f-a9f8-453b-80c1-6bea568ba2ab\\postman_collection.json"
+        },
+        "api_preview": [
+            {
+                "name": "getAuthToken",
+                "method": "POST",
+                "url": "https://master.suprabhatapp.in/rest/suprabhat/V2/getAuthToken",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "login.username": "Invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<JWT_TOKEN>",
+                    "responseMessage": "success"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "",
+                "is_token_generator": false,
+                "url_params": {
+                    "login.username": "Invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                }
+            }
+        ]
+    },
+    "5888a481-1255-4b79-9935-29371fe178b1": {
+        "status": "failed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 1 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "ERROR: name '_create_file' is not defined"
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\5888a481-1255-4b79-9935-29371fe178b1\\postman_collection.json"
+        },
+        "api_preview": [
+            {
+                "name": "getAuthToken",
+                "method": "POST",
+                "url": "https://master.suprabhatapp.in/rest/suprabhat/V2/getAuthToken",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "login.username": "Invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<JWT_TOKEN>",
+                    "responseMessage": "success"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "",
+                "is_token_generator": false,
+                "url_params": {
+                    "login.username": "Invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                }
+            }
+        ]
+    },
+    "c4a902f3-280e-4c02-a966-23bc3ed50b90": {
+        "status": "failed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "WARNING: Failed to read Excel file: Excel file format cannot be determined, you must specify an engine manually.",
+            "No valid API definitions found in file."
+        ],
+        "artifacts": {}
+    },
+    "1a416c2d-0035-4390-925c-fef518ea7371": {
+        "status": "failed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "WARNING: Failed to read Excel file: Excel file format cannot be determined, you must specify an engine manually.",
+            "No valid API definitions found in file."
+        ],
+        "artifacts": {}
+    },
+    "6557ed2b-a1de-4587-b4f0-e1f1ad9fc49a": {
+        "status": "failed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "WARNING: Failed to read Excel file: File is not a zip file",
+            "No valid API definitions found in file."
+        ],
+        "artifacts": {}
+    },
+    "c3b7761f-d3c2-43cb-a22d-9c2198f95710": {
+        "status": "failed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "WARNING: Failed to read Excel file: File is not a zip file",
+            "No valid API definitions found in file."
+        ],
+        "artifacts": {}
+    },
+    "f5d5318d-f2f2-4d18-a559-68c9dc77d7fa": {
+        "status": "failed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 3 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "ERROR: name '_create_file' is not defined"
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\f5d5318d-f2f2-4d18-a559-68c9dc77d7fa\\postman_collection.json"
+        },
+        "api_preview": [
+            {
+                "name": "getAuthToken",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/getAuthToken",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<JWT_TOKEN>",
+                    "responseMessage": "success"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": true,
+                "url_params": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                }
+            },
+            {
+                "name": "getUserDetails",
+                "method": "GET",
+                "url": "/rest/suprabhat/V2/getUserDetails",
+                "ref_id": "",
+                "module": "General",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "Authorization": "Bearer <token>"
+                },
+                "expected_response": {
+                    "username": "user123",
+                    "email": "test@example.com"
+                },
+                "status": 200,
+                "auth_scope": "Collection",
+                "token_variable": "",
+                "is_token_generator": false,
+                "url_params": {}
+            },
+            {
+                "name": "createUser",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/createUser",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "username": "newuser",
+                    "role": "admin"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "id": 101,
+                    "status": "created"
+                },
+                "status": 200,
+                "auth_scope": "Collection",
+                "token_variable": "",
+                "is_token_generator": false,
+                "url_params": {}
+            }
+        ]
+    },
+    "7f7c4f2c-e5ea-4113-a1af-0c32c7222610": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 3 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\7f7c4f2c-e5ea-4113-a1af-0c32c7222610\\postman_collection.json",
+            "pytest": "None"
+        },
+        "api_preview": [
+            {
+                "name": "getAuthToken",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/getAuthToken",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<JWT_TOKEN>",
+                    "responseMessage": "success"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": true,
+                "url_params": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                }
+            },
+            {
+                "name": "getUserDetails",
+                "method": "GET",
+                "url": "/rest/suprabhat/V2/getUserDetails",
+                "ref_id": "",
+                "module": "General",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "Authorization": "Bearer <token>"
+                },
+                "expected_response": {
+                    "username": "user123",
+                    "email": "test@example.com"
+                },
+                "status": 200,
+                "auth_scope": "Collection",
+                "token_variable": "",
+                "is_token_generator": false,
+                "url_params": {}
+            },
+            {
+                "name": "createUser",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/createUser",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "username": "newuser",
+                    "role": "admin"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "id": 101,
+                    "status": "created"
+                },
+                "status": 200,
+                "auth_scope": "Collection",
+                "token_variable": "",
+                "is_token_generator": false,
+                "url_params": {}
+            }
+        ]
+    },
+    "659ba773-b8ca-4705-83ab-0fb0d6bfec2a": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 1 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\659ba773-b8ca-4705-83ab-0fb0d6bfec2a\\postman_collection.json",
+            "pytest": "None"
+        },
+        "api_preview": [
+            {
+                "name": "getAuthToken",
+                "method": "POST",
+                "url": "https://master.suprabhatapp.in/rest/suprabhat/V2/getAuthToken",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "login.username": "Invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<JWT_TOKEN>",
+                    "responseMessage": "success"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "",
+                "is_token_generator": false,
+                "url_params": {
+                    "login.username": "Invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                }
+            }
+        ]
+    },
+    "3965929b-6b10-4eaf-adcd-94814085ebf2": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 3 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\3965929b-6b10-4eaf-adcd-94814085ebf2\\postman_collection.json",
+            "pytest": "artifacts_storage\\3965929b-6b10-4eaf-adcd-94814085ebf2\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "getAuthToken",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/getAuthToken",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<JWT_TOKEN>",
+                    "responseMessage": "success"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": true,
+                "url_params": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                }
+            },
+            {
+                "name": "getUserDetails",
+                "method": "GET",
+                "url": "/rest/suprabhat/V2/getUserDetails",
+                "ref_id": "",
+                "module": "General",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "Authorization": "Bearer <token>"
+                },
+                "expected_response": {
+                    "username": "user123",
+                    "email": "test@example.com"
+                },
+                "status": 200,
+                "auth_scope": "Collection",
+                "token_variable": "",
+                "is_token_generator": false,
+                "url_params": {}
+            },
+            {
+                "name": "createUser",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/createUser",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "username": "newuser",
+                    "role": "admin"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "id": 101,
+                    "status": "created"
+                },
+                "status": 200,
+                "auth_scope": "Collection",
+                "token_variable": "",
+                "is_token_generator": false,
+                "url_params": {}
+            }
+        ]
+    },
+    "d58c8b03-87da-4ce8-a6ab-a16a2cb49d28": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 1 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\d58c8b03-87da-4ce8-a6ab-a16a2cb49d28\\postman_collection.json",
+            "pytest": "artifacts_storage\\d58c8b03-87da-4ce8-a6ab-a16a2cb49d28\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "fetchEmplLeaveRequestList",
+                "method": "GET",
+                "url": "https://manmul-test3.milkosoft.in/rest/v2/dailybiz/fetchEmplLeaveRequestList",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "tenantId": "MANMUL-TEST4",
+                    "partyId": 927,
+                    "fromDate": "01-December-2025",
+                    "thruDate": "31-December-2025"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "employeeLeavesResult": {
+                        "employeeId": "927",
+                        "labelList": [
+                            {
+                                "labelName": "Pending",
+                                "labelValue": 4
+                            },
+                            {
+                                "labelName": "Recommend",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "Verified",
+                                "labelValue": 6
+                            },
+                            {
+                                "labelName": "Approved",
+                                "labelValue": 5
+                            },
+                            {
+                                "labelName": "Rejected",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "Created",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "All",
+                                "labelValue": 15
+                            }
+                        ],
+                        "leaveList": [
+                            {
+                                "leaveTypeDesc": "Casual Leave",
+                                "partyId": "1061",
+                                "partyName": "RAGHU D R",
+                                "leaveTypeId": "CL",
+                                "leaveStatus": "Approved",
+                                "leaveFromDate": "Dec 05, 2025",
+                                "leaveThruDate": "Dec 05, 2025",
+                                "comment": null,
+                                "emplLeaveApplId": "35736",
+                                "appliedDate": "Dec 06, 2025",
+                                "leaveCountDays": 1.0,
+                                "status": "Approved",
+                                "nextLevelStatusList": [
+                                    {
+                                        "id": "LEAVE_REJECTED",
+                                        "description": "REJECTED"
+                                    },
+                                    {
+                                        "id": "LEAVE_REJECTED",
+                                        "description": "REJECTED"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDYxIiwiaXNzIjoiU3VwcmFiaGF0IEFwcCIsImV4cCI6MTc2OTU3NjIxNH0.0l4FcPZQPyvkG8kGmplmXlcUc-0-66GxueLDDdG-7iM",
+                "is_token_generator": true,
+                "url_params": {
+                    "tenantId": "MANMUL-TEST4",
+                    "partyId": 927,
+                    "fromDate": "01-December-2025",
+                    "thruDate": "31-December-2025"
+                }
+            }
+        ]
+    },
+    "4955ebd3-23a7-4080-b67f-e458d5e74ee0": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 4 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\4955ebd3-23a7-4080-b67f-e458d5e74ee0\\postman_collection.json",
+            "pytest": "artifacts_storage\\4955ebd3-23a7-4080-b67f-e458d5e74ee0\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "getAuthToken",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/getAuthToken",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<JWT_TOKEN>",
+                    "responseMessage": "success"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "url_params": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                }
+            },
+            {
+                "name": "getUserDetails",
+                "method": "GET",
+                "url": "/rest/suprabhat/V2/getUserDetails",
+                "ref_id": "",
+                "module": "General",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "Authorization": "Bearer <token>"
+                },
+                "expected_response": {
+                    "username": "user123",
+                    "email": "test@example.com"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "url_params": {}
+            },
+            {
+                "name": "createUser",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/createUser",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "username": "newuser",
+                    "role": "admin"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "id": 101,
+                    "status": "created"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "url_params": {}
+            },
+            {
+                "name": "fetchEmplLeaveRequestList",
+                "method": "GET",
+                "url": "rest/v2/dailybiz",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "tenantId": "MANMUL-TEST4",
+                    "partyId": 927,
+                    "fromDate": "01-December-2025",
+                    "thruDate": "31-December-2025"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "employeeLeavesResult": {
+                        "employeeId": "927",
+                        "labelList": [
+                            {
+                                "labelName": "Pending",
+                                "labelValue": 4
+                            },
+                            {
+                                "labelName": "Recommend",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "Verified",
+                                "labelValue": 6
+                            },
+                            {
+                                "labelName": "Approved",
+                                "labelValue": 5
+                            },
+                            {
+                                "labelName": "Rejected",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "Created",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "All",
+                                "labelValue": 15
+                            }
+                        ],
+                        "leaveList": [
+                            {
+                                "leaveTypeDesc": "Casual Leave",
+                                "partyId": "1061",
+                                "partyName": "RAGHU D R",
+                                "leaveTypeId": "CL",
+                                "leaveStatus": "Approved",
+                                "leaveFromDate": "Dec 05, 2025",
+                                "leaveThruDate": "Dec 05, 2025",
+                                "comment": null,
+                                "emplLeaveApplId": "35736",
+                                "appliedDate": "Dec 06, 2025",
+                                "leaveCountDays": 1.0,
+                                "status": "Approved",
+                                "nextLevelStatusList": [
+                                    {
+                                        "id": "LEAVE_REJECTED",
+                                        "description": "REJECTED"
+                                    },
+                                    {
+                                        "id": "LEAVE_REJECTED",
+                                        "description": "REJECTED"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "url_params": {
+                    "tenantId": "MANMUL-TEST4",
+                    "partyId": 927,
+                    "fromDate": "01-December-2025",
+                    "thruDate": "31-December-2025"
+                }
+            }
+        ]
+    },
+    "3c11d6e0-7fcb-4273-b7f6-4e65611f7575": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 1 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\3c11d6e0-7fcb-4273-b7f6-4e65611f7575\\postman_collection.json",
+            "pytest": "artifacts_storage\\3c11d6e0-7fcb-4273-b7f6-4e65611f7575\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "fetchEmplLeaveRequestList",
+                "method": "GET",
+                "url": "https://manmul-test3.milkosoft.in/rest/v2/dailybiz/fetchEmplLeaveRequestList",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "tenantId": "MANMUL-TEST4",
+                    "partyId": 927,
+                    "fromDate": "01-December-2025",
+                    "thruDate": "31-December-2025"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "employeeLeavesResult": {
+                        "employeeId": "927",
+                        "labelList": [
+                            {
+                                "labelName": "Pending",
+                                "labelValue": 4
+                            },
+                            {
+                                "labelName": "Recommend",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "Verified",
+                                "labelValue": 6
+                            },
+                            {
+                                "labelName": "Approved",
+                                "labelValue": 5
+                            },
+                            {
+                                "labelName": "Rejected",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "Created",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "All",
+                                "labelValue": 15
+                            }
+                        ],
+                        "leaveList": [
+                            {
+                                "leaveTypeDesc": "Casual Leave",
+                                "partyId": "1061",
+                                "partyName": "RAGHU D R",
+                                "leaveTypeId": "CL",
+                                "leaveStatus": "Approved",
+                                "leaveFromDate": "Dec 05, 2025",
+                                "leaveThruDate": "Dec 05, 2025",
+                                "comment": null,
+                                "emplLeaveApplId": "35736",
+                                "appliedDate": "Dec 06, 2025",
+                                "leaveCountDays": 1.0,
+                                "status": "Approved",
+                                "nextLevelStatusList": [
+                                    {
+                                        "id": "LEAVE_REJECTED",
+                                        "description": "REJECTED"
+                                    },
+                                    {
+                                        "id": "LEAVE_REJECTED",
+                                        "description": "REJECTED"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": true,
+                "url_params": {
+                    "tenantId": "MANMUL-TEST4",
+                    "partyId": 927,
+                    "fromDate": "01-December-2025",
+                    "thruDate": "31-December-2025"
+                }
+            }
+        ]
+    },
+    "69e8958f-f426-42eb-b53c-2bf0006c94e4": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 1 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\69e8958f-f426-42eb-b53c-2bf0006c94e4\\postman_collection.json",
+            "pytest": "artifacts_storage\\69e8958f-f426-42eb-b53c-2bf0006c94e4\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "fetchEmplLeaveRequestList",
+                "method": "GET",
+                "url": "https://manmul-test3.milkosoft.in/rest/v2/dailybiz/fetchEmplLeaveRequestList",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "tenantId": "MANMUL-TEST4",
+                    "partyId": 927,
+                    "fromDate": "01-December-2025",
+                    "thruDate": "31-December-2025"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "employeeLeavesResult": {
+                        "employeeId": "927",
+                        "labelList": [
+                            {
+                                "labelName": "Pending",
+                                "labelValue": 4
+                            },
+                            {
+                                "labelName": "Recommend",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "Verified",
+                                "labelValue": 6
+                            },
+                            {
+                                "labelName": "Approved",
+                                "labelValue": 5
+                            },
+                            {
+                                "labelName": "Rejected",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "Created",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "All",
+                                "labelValue": 15
+                            }
+                        ],
+                        "leaveList": [
+                            {
+                                "leaveTypeDesc": "Casual Leave",
+                                "partyId": "1061",
+                                "partyName": "RAGHU D R",
+                                "leaveTypeId": "CL",
+                                "leaveStatus": "Approved",
+                                "leaveFromDate": "Dec 05, 2025",
+                                "leaveThruDate": "Dec 05, 2025",
+                                "comment": null,
+                                "emplLeaveApplId": "35736",
+                                "appliedDate": "Dec 06, 2025",
+                                "leaveCountDays": 1.0,
+                                "status": "Approved",
+                                "nextLevelStatusList": [
+                                    {
+                                        "id": "LEAVE_REJECTED",
+                                        "description": "REJECTED"
+                                    },
+                                    {
+                                        "id": "LEAVE_REJECTED",
+                                        "description": "REJECTED"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "url_params": {
+                    "tenantId": "MANMUL-TEST4",
+                    "partyId": 927,
+                    "fromDate": "01-December-2025",
+                    "thruDate": "31-December-2025"
+                }
+            }
+        ]
+    },
+    "7157a5ec-2611-478d-a166-ee8170d0b4c5": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 1 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\7157a5ec-2611-478d-a166-ee8170d0b4c5\\postman_collection.json",
+            "pytest": "artifacts_storage\\7157a5ec-2611-478d-a166-ee8170d0b4c5\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "fetchEmplLeaveRequestList",
+                "method": "GET",
+                "url": "https://manmul-test3.milkosoft.in/rest/v2/dailybiz/fetchEmplLeaveRequestList",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "tenantId": "MANMUL-TEST4",
+                    "partyId": 927,
+                    "fromDate": "01-December-2025",
+                    "thruDate": "31-December-2025"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "employeeLeavesResult": {
+                        "employeeId": "927",
+                        "labelList": [
+                            {
+                                "labelName": "Pending",
+                                "labelValue": 4
+                            },
+                            {
+                                "labelName": "Recommend",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "Verified",
+                                "labelValue": 6
+                            },
+                            {
+                                "labelName": "Approved",
+                                "labelValue": 5
+                            },
+                            {
+                                "labelName": "Rejected",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "Created",
+                                "labelValue": 0
+                            },
+                            {
+                                "labelName": "All",
+                                "labelValue": 15
+                            }
+                        ],
+                        "leaveList": [
+                            {
+                                "leaveTypeDesc": "Casual Leave",
+                                "partyId": "1061",
+                                "partyName": "RAGHU D R",
+                                "leaveTypeId": "CL",
+                                "leaveStatus": "Approved",
+                                "leaveFromDate": "Dec 05, 2025",
+                                "leaveThruDate": "Dec 05, 2025",
+                                "comment": null,
+                                "emplLeaveApplId": "35736",
+                                "appliedDate": "Dec 06, 2025",
+                                "leaveCountDays": 1.0,
+                                "status": "Approved",
+                                "nextLevelStatusList": [
+                                    {
+                                        "id": "LEAVE_REJECTED",
+                                        "description": "REJECTED"
+                                    },
+                                    {
+                                        "id": "LEAVE_REJECTED",
+                                        "description": "REJECTED"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": true,
+                "url_params": {
+                    "tenantId": "MANMUL-TEST4",
+                    "partyId": 927,
+                    "fromDate": "01-December-2025",
+                    "thruDate": "31-December-2025"
+                }
+            }
+        ]
+    },
+    "739e6625-adf2-4c98-bd41-3fd8e864ad96": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "WARNING: Row 2: Invalid JSON in body.",
+            "WARNING: Row 3: Invalid JSON in URL Params.",
+            "Found 2 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\739e6625-adf2-4c98-bd41-3fd8e864ad96\\postman_collection.json",
+            "pytest": "artifacts_storage\\739e6625-adf2-4c98-bd41-3fd8e864ad96\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "getAuthToken",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/getAuthToken",
+                "ref_id": "",
+                "module": "General",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<JWT_TOKEN>",
+                    "responseMessage": "success"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": true,
+                "url_params": {}
+            },
+            {
+                "name": "getCustomerProfileDetails",
+                "method": "GET",
+                "url": "/rest/suprabhat/V2/getCustomerProfileDetails?tenantId=suprabhat-latest&customerId=20955&supplierId=HERITAGE&facilityId=20955",
+                "ref_id": "",
+                "module": "General",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "token": "suprabhat-latest"
+                },
+                "expected_response": "None",
+                "status": 200,
+                "auth_scope": "Collection",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "url_params": {}
+            }
+        ]
+    },
+    "820cc61e-2287-48eb-9452-c9b819936787": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 2 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\820cc61e-2287-48eb-9452-c9b819936787\\postman_collection.json",
+            "pytest": "artifacts_storage\\820cc61e-2287-48eb-9452-c9b819936787\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "Get Auth Token",
+                "method": "POST",
+                "url": "getAuthToken",
+                "ref_id": "AUTH-001",
+                "module": "Authentication",
+                "body": {
+                    "login.username": "invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<authToken>"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "authToken",
+                "is_token_generator": true,
+                "url_params": {}
+            },
+            {
+                "name": "Get Customer Profile Details",
+                "method": "GET",
+                "url": "getCustomerProfileDetails",
+                "ref_id": "CUST-001",
+                "module": "Customer",
+                "body": {
+                    "tenantId": "suprabhat-latest",
+                    "customerId": "20955",
+                    "supplierId": "HERITAGE",
+                    "facilityId": "20955"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "token": "{{authToken}}",
+                    "Content-Type": "application/json"
+                },
+                "expected_response": "None",
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "url_params": {
+                    "tenantId": "suprabhat-latest",
+                    "customerId": "20955",
+                    "supplierId": "HERITAGE",
+                    "facilityId": "20955"
+                }
+            }
+        ]
+    },
+    "74a89623-6099-4824-bdd5-88ab288f3cce": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 2 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\74a89623-6099-4824-bdd5-88ab288f3cce\\postman_collection.json",
+            "pytest": "artifacts_storage\\74a89623-6099-4824-bdd5-88ab288f3cce\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "Get Auth Token",
+                "method": "POST",
+                "url": "getAuthToken",
+                "ref_id": "AUTH-001",
+                "module": "Authentication",
+                "body": {
+                    "login.username": "invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<authToken>"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "authToken",
+                "is_token_generator": true,
+                "url_params": {}
+            },
+            {
+                "name": "Get Customer Profile Details",
+                "method": "GET",
+                "url": "getCustomerProfileDetails",
+                "ref_id": "CUST-001",
+                "module": "Customer",
+                "body": {
+                    "tenantId": "suprabhat-latest",
+                    "customerId": "20955",
+                    "supplierId": "HERITAGE",
+                    "facilityId": "20955"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "token": "{{authToken}}",
+                    "Content-Type": "application/json"
+                },
+                "expected_response": "None",
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "url_params": {
+                    "tenantId": "suprabhat-latest",
+                    "customerId": "20955",
+                    "supplierId": "HERITAGE",
+                    "facilityId": "20955"
+                }
+            }
+        ]
+    },
+    "90bcc582-3bd9-406a-9ed9-54373687fdd2": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 2 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\90bcc582-3bd9-406a-9ed9-54373687fdd2\\postman_collection.json",
+            "pytest": "artifacts_storage\\90bcc582-3bd9-406a-9ed9-54373687fdd2\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "Get Auth Token",
+                "method": "POST",
+                "url": "getAuthToken",
+                "ref_id": "AUTH-001",
+                "module": "Authentication",
+                "body": {
+                    "login.username": "invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<authToken>"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "authToken",
+                "is_token_generator": true,
+                "params": {}
+            },
+            {
+                "name": "Get Customer Profile Details",
+                "method": "GET",
+                "url": "getCustomerProfileDetails",
+                "ref_id": "CUST-001",
+                "module": "Customer",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "token": "{{authToken}}"
+                },
+                "expected_response": "None",
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "params": {
+                    "Key": "",
+                    "tenantId": "suprabhat-latest",
+                    "customerId": "20955",
+                    "supplierId": "HERITAGE",
+                    "facilityId": "20955"
+                }
+            }
+        ]
+    },
+    "cb4a40d7-3648-491b-b44f-1c167aea938a": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 2 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\cb4a40d7-3648-491b-b44f-1c167aea938a\\postman_collection.json",
+            "pytest": "artifacts_storage\\cb4a40d7-3648-491b-b44f-1c167aea938a\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "Get Auth Token",
+                "method": "POST",
+                "url": "getAuthToken",
+                "ref_id": "AUTH-001",
+                "module": "Authentication",
+                "body": {
+                    "login.username": "invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<authToken>"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "authToken",
+                "is_token_generator": true,
+                "params": {}
+            },
+            {
+                "name": "Get Customer Profile Details",
+                "method": "GET",
+                "url": "getCustomerProfileDetails",
+                "ref_id": "CUST-001",
+                "module": "Customer",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "token": "{{authToken}}"
+                },
+                "expected_response": "None",
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "params": {
+                    "Key": "",
+                    "tenantId": "suprabhat-latest",
+                    "customerId": "20955",
+                    "supplierId": "HERITAGE",
+                    "facilityId": "20955"
+                }
+            }
+        ]
+    },
+    "e1c3c7e0-928e-47eb-9624-92d5ca8a5ad1": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 2 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\e1c3c7e0-928e-47eb-9624-92d5ca8a5ad1\\postman_collection.json",
+            "pytest": "artifacts_storage\\e1c3c7e0-928e-47eb-9624-92d5ca8a5ad1\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "Get Auth Token",
+                "method": "POST",
+                "url": "getAuthToken",
+                "ref_id": "AUTH-001",
+                "module": "Authentication",
+                "body": {
+                    "login.username": "invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<authToken>"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "authToken",
+                "is_token_generator": true,
+                "params": {}
+            },
+            {
+                "name": "Get Customer Profile Details",
+                "method": "GET",
+                "url": "getCustomerProfileDetails",
+                "ref_id": "CUST-001",
+                "module": "Customer",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "token": "{{authToken}}"
+                },
+                "expected_response": "None",
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "params": {
+                    "Key": "",
+                    "tenantId": "suprabhat-latest",
+                    "customerId": "20955",
+                    "supplierId": "HERITAGE",
+                    "facilityId": "20955"
+                }
+            }
+        ]
+    },
+    "826335e0-0928-4691-a7cb-cbb33ac32a53": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 2 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\826335e0-0928-4691-a7cb-cbb33ac32a53\\postman_collection.json",
+            "pytest": "artifacts_storage\\826335e0-0928-4691-a7cb-cbb33ac32a53\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "Get Auth Token",
+                "method": "POST",
+                "url": "getAuthToken",
+                "ref_id": "AUTH-001",
+                "module": "Authentication",
+                "body": {
+                    "login.username": "invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<authToken>"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "authToken",
+                "is_token_generator": true,
+                "params": {}
+            },
+            {
+                "name": "Get Customer Profile Details",
+                "method": "GET",
+                "url": "getCustomerProfileDetails",
+                "ref_id": "CUST-001",
+                "module": "Customer",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "token": "{{authToken}}"
+                },
+                "expected_response": "None",
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "params": {
+                    "Key": "",
+                    "tenantId": "suprabhat-latest",
+                    "customerId": "20955",
+                    "supplierId": "HERITAGE",
+                    "facilityId": "20955"
+                }
+            }
+        ]
+    },
+    "2a0449b3-ece8-4afe-9319-936d618606cb": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 2 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\2a0449b3-ece8-4afe-9319-936d618606cb\\postman_collection.json",
+            "pytest": "artifacts_storage\\2a0449b3-ece8-4afe-9319-936d618606cb\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "Get Auth Token",
+                "method": "POST",
+                "url": "getAuthToken",
+                "ref_id": "AUTH-001",
+                "module": "Authentication",
+                "body": {
+                    "login.username": "invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<authToken>"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "authToken",
+                "is_token_generator": true,
+                "params": {}
+            },
+            {
+                "name": "Get Customer Profile Details",
+                "method": "GET",
+                "url": "getCustomerProfileDetails",
+                "ref_id": "CUST-001",
+                "module": "Customer",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "token": "{{authToken}}"
+                },
+                "expected_response": "None",
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "params": {
+                    "Key": "",
+                    "tenantId": "suprabhat-latest",
+                    "customerId": "20955",
+                    "supplierId": "HERITAGE",
+                    "facilityId": "20955"
+                }
+            }
+        ]
+    },
+    "6aa74dde-df62-48b2-b889-f9f9b175427c": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 2 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\6aa74dde-df62-48b2-b889-f9f9b175427c\\postman_collection.json",
+            "pytest": "artifacts_storage\\6aa74dde-df62-48b2-b889-f9f9b175427c\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "Get Auth Token",
+                "method": "POST",
+                "url": "getAuthToken",
+                "ref_id": "AUTH-001",
+                "module": "Authentication",
+                "body": {
+                    "login.username": "invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<authToken>"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "authToken",
+                "is_token_generator": true,
+                "params": {}
+            },
+            {
+                "name": "Get Customer Profile Details",
+                "method": "GET",
+                "url": "getCustomerProfileDetails",
+                "ref_id": "CUST-001",
+                "module": "Customer",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "token": "{{authToken}}"
+                },
+                "expected_response": "None",
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "params": {
+                    "Key": "",
+                    "tenantId": "suprabhat-latest",
+                    "customerId": "20955",
+                    "supplierId": "HERITAGE",
+                    "facilityId": "20955"
+                }
+            }
+        ]
+    },
+    "15903d57-cebe-49d0-b9a6-1740b299a48b": {
+        "status": "failed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "WARNING: Missing required columns in sheet 'Sheet1': api name",
+            "No valid API definitions found in file."
+        ],
+        "artifacts": {}
+    },
+    "07ecfe2c-c37e-42ca-b7e9-ab6e524588e6": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 3 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\07ecfe2c-c37e-42ca-b7e9-ab6e524588e6\\postman_collection.json",
+            "pytest": "artifacts_storage\\07ecfe2c-c37e-42ca-b7e9-ab6e524588e6\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "getAuthToken",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/getAuthToken",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<JWT_TOKEN>",
+                    "responseMessage": "success"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": true,
+                "params": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                }
+            },
+            {
+                "name": "getUserDetails",
+                "method": "GET",
+                "url": "/rest/suprabhat/V2/getUserDetails",
+                "ref_id": "",
+                "module": "General",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "Authorization": "Bearer <token>"
+                },
+                "expected_response": {
+                    "username": "user123",
+                    "email": "test@example.com"
+                },
+                "status": 200,
+                "auth_scope": "Collection",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "params": {}
+            },
+            {
+                "name": "createUser",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/createUser",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "username": "newuser",
+                    "role": "admin"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "id": 101,
+                    "status": "created"
+                },
+                "status": 200,
+                "auth_scope": "Collection",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "params": {}
+            }
+        ]
+    },
+    "df9f39fe-5560-4ff2-846b-e5f5809321af": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 3 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\df9f39fe-5560-4ff2-846b-e5f5809321af\\postman_collection.json",
+            "pytest": "artifacts_storage\\df9f39fe-5560-4ff2-846b-e5f5809321af\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "getAuthToken",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/getAuthToken",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<JWT_TOKEN>",
+                    "responseMessage": "success"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "params": {
+                    "login.username": "user123",
+                    "login.password": "pass123",
+                    "tenantId": "test-tenant"
+                }
+            },
+            {
+                "name": "getUserDetails",
+                "method": "GET",
+                "url": "/rest/suprabhat/V2/getUserDetails",
+                "ref_id": "",
+                "module": "General",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "Authorization": "Bearer <token>"
+                },
+                "expected_response": {
+                    "username": "user123",
+                    "email": "test@example.com"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "params": {}
+            },
+            {
+                "name": "createUser",
+                "method": "POST",
+                "url": "/rest/suprabhat/V2/createUser",
+                "ref_id": "",
+                "module": "General",
+                "body": {
+                    "username": "newuser",
+                    "role": "admin"
+                },
+                "body_mode": "json",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "expected_response": {
+                    "id": 101,
+                    "status": "created"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "params": {}
+            }
+        ]
+    },
+    "c73ed519-1384-4ba4-8567-43ca2a73902e": {
+        "status": "completed",
+        "logs": [
+            "File uploaded. Waiting for processing...",
+            "Started processing file...",
+            "Parsing XLSX file...",
+            "Found 2 API definitions.",
+            "Generating Postman Collection...",
+            "Generating Pytest structure...",
+            "Processing finished successfully."
+        ],
+        "artifacts": {
+            "postman": "artifacts_storage\\c73ed519-1384-4ba4-8567-43ca2a73902e\\postman_collection.json",
+            "pytest": "artifacts_storage\\c73ed519-1384-4ba4-8567-43ca2a73902e\\pytest_tests.zip"
+        },
+        "api_preview": [
+            {
+                "name": "Get Auth Token",
+                "method": "POST",
+                "url": "getAuthToken",
+                "ref_id": "AUTH-001",
+                "module": "Authentication",
+                "body": {
+                    "login.username": "invoice2",
+                    "login.password": "vst123",
+                    "tenantId": "suprabhat-latest"
+                },
+                "body_mode": "urlencoded",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "expected_response": {
+                    "token": "<authToken>"
+                },
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "authToken",
+                "is_token_generator": true,
+                "params": {}
+            },
+            {
+                "name": "Get Customer Profile Details",
+                "method": "GET",
+                "url": "getCustomerProfileDetails",
+                "ref_id": "CUST-001",
+                "module": "Customer",
+                "body": {},
+                "body_mode": "json",
+                "headers": {
+                    "token": "{{authToken}}"
+                },
+                "expected_response": "None",
+                "status": 200,
+                "auth_scope": "",
+                "token_variable": "token",
+                "is_token_generator": false,
+                "params": {
+                    "Key": "",
+                    "tenantId": "suprabhat-latest",
+                    "customerId": "20955",
+                    "supplierId": "HERITAGE",
+                    "facilityId": "20955"
+                }
+            }
+        ]
+    }
+}

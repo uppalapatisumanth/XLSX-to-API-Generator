@@ -1,0 +1,1129 @@
+{
+    "info": {
+        "_postman_id": "-6900467490263322299",
+        "name": "Generated from DO_api documentation.xlsx",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "getAuthToken",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getAuthToken",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getAuthToken"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getCustomerIndentDetails",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getCustomerIndentDetails",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getCustomerIndentDetails"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getCustomerInvoiceAndPaymentDetails",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getCustomerInvoiceAndPaymentDetails",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getCustomerInvoiceAndPaymentDetails"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getconsumerbilling",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getconsumerbilling",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getconsumerbilling"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "createCustomerInvoice",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/createCustomerInvoice",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "createCustomerInvoice"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "makeCustomerPayment",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/makeCustomerPayment",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "makeCustomerPayment"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "makeRetailerPayment",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/makeRetailerPayment",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "makeRetailerPayment"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getCustomersDetails",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getCustomersDetails",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getCustomersDetails"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getMobilePermissions",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getMobilePermissions",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getMobilePermissions"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getReceiptsAndPayments",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getReceiptsAndPayments",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getReceiptsAndPayments"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getCnsmrOrSplrInvoiceAndPaymentDetails",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getCustomerInvoiceAndPaymentDetails",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getCustomerInvoiceAndPaymentDetails"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getSuppliers",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getSuppliers",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getSuppliers"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getPartyLedger",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getPartyLedger",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getPartyLedger"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "createReceipt",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/createReceipt",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "createReceipt"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getTokenRequest",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getTokenRequest",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getTokenRequest"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "updatePassword",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/updatePassword",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "updatePassword"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "cancelInvoice",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/cancelInvoice",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "cancelInvoice"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "cancelReceipt",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/cancelReceipt",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "cancelReceipt"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "cancelRetailerPayment",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/cancelRetailerPayment",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "cancelRetailerPayment"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "validateCustomer",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/validateCustomer",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "validateCustomer"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "customerRegistration",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/customerRegistration",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "customerRegistration"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getRetailerDetails",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getRetailerDetails",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getRetailerDetails"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getCustomerIndentDetails",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getCustomerIndentDetails",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getCustomerIndentDetails"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getCustomerProfileDetails",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getCustomerProfileDetails",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getCustomerProfileDetails"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "makeSubscriptionChange",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/makeSubscriptionChange",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "makeSubscriptionChange"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "makeMultipleProductQtyChange",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/makeMultipleProductQtyChange",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "makeMultipleProductQtyChange"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getSupplierProducts",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getSupplierProducts",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getSupplierProducts"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "makeNoMilk",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/makeNoMilk",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "makeNoMilk"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getSupplierCustomersIndents",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/getSupplierCustomersIndents",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "getSupplierCustomersIndents"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "makePaymentTransGateway",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/makePaymentTransGateway",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "makePaymentTransGateway"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "updatePGPaymentStatus",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/updatePGPaymentStatus",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "updatePGPaymentStatus"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "expireAuthToken",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/expireAuthToken",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "expireAuthToken"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "createCustomer",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/createCustomer",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "createCustomer"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "generateRetailerPeriodBilling",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/generateRetailerPeriodBilling",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "generateRetailerPeriodBilling"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "createNewProductForRetailers",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "/rest/suprabhat/V2/createNewProductForRetailers",
+                    "host": [],
+                    "path": [
+                        "",
+                        "rest",
+                        "suprabhat",
+                        "V2",
+                        "createNewProductForRetailers"
+                    ],
+                    "query": []
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        }
+    ]
+}

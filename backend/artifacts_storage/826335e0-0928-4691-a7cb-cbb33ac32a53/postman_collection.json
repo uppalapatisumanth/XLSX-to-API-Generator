@@ -1,0 +1,155 @@
+{
+    "info": {
+        "_postman_id": "7563736364142508057",
+        "name": "Generated from Suprabhat_APIs_v3.xlsx",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Authentication",
+            "item": [
+                {
+                    "name": "Get Auth Token",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{base_url}}/getAuthToken",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "getAuthToken"
+                            ],
+                            "query": []
+                        },
+                        "description": "Request for Get Auth Token",
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "login.username",
+                                    "value": "invoice2",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "login.password",
+                                    "value": "vst123",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "tenantId",
+                                    "value": "suprabhat-latest",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Successful request\", function () {",
+                                    "    pm.expect(pm.response.code).to.be.oneOf([200, 200, 201]);",
+                                    "});",
+                                    "// Token Generator for variable: authToken",
+                                    "var jsonData = pm.response.json();",
+                                    "if (jsonData.authToken) { pm.globals.set(\"authToken\", jsonData.authToken); }",
+                                    "else if (jsonData.token) { pm.globals.set(\"authToken\", jsonData.token); }",
+                                    "else if (jsonData.access_token) { pm.globals.set(\"authToken\", jsonData.access_token); }",
+                                    "// Skipped strict body match because expected response contains placeholders: {'token': '<authToken>'}"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Customer",
+            "item": [
+                {
+                    "name": "Get Customer Profile Details",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "{{authToken}}",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{base_url}}/getCustomerProfileDetails",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "getCustomerProfileDetails"
+                            ],
+                            "query": [
+                                {
+                                    "key": "Key",
+                                    "value": ""
+                                },
+                                {
+                                    "key": "tenantId",
+                                    "value": "suprabhat-latest"
+                                },
+                                {
+                                    "key": "customerId",
+                                    "value": "20955"
+                                },
+                                {
+                                    "key": "supplierId",
+                                    "value": "HERITAGE"
+                                },
+                                {
+                                    "key": "facilityId",
+                                    "value": "20955"
+                                }
+                            ]
+                        },
+                        "description": "Request for Get Customer Profile Details"
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Successful request\", function () {",
+                                    "    pm.expect(pm.response.code).to.be.oneOf([200, 200, 201]);",
+                                    "});",
+                                    "pm.test(\"Body contains expected text\", function () {",
+                                    "    pm.expect(pm.response.text()).to.include(\"None\");",
+                                    "});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "https://master.suprabhatapp.in/rest/suprabhat/V2",
+            "type": "string"
+        },
+        {
+            "key": "tenantId",
+            "value": "suprabhat-latest",
+            "type": "string"
+        }
+    ]
+}
