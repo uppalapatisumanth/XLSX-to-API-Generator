@@ -14,8 +14,8 @@ app = FastAPI(title="API Factory Backend")
 # 5. CORS Configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost"],
-    allow_credentials=True,
+    allow_origins=["*"], # Allow ALL origins (Vercel, etc.)
+    allow_credentials=False, # No cookies needed for this app
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -31,7 +31,7 @@ if not ARTIFACTS_DIR.exists():
 
 # --- Integrated Existing Functionality ---
 try:
-    from routers import processing
+    from backend.routers import processing
     app.include_router(processing.router)
     logger.info("Successfully loaded 'processing' router.")
 except Exception as e:
