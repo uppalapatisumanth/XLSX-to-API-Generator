@@ -100,21 +100,4 @@ The system will tell you exactly which row has the error. Just fix the quotes or
 
 ---
 
----
-
-## ☁️ Deploy to GitHub
-
-Want to see your reports online?
-
-1.  **Push your code** to GitHub.
-2.  Go to your Repository **Settings** > **Pages**.
-3.  Under **Build and deployment**, select **Source**: `GitHub Actions`.
-    *   *(Or if using the legacy method, select `gh-pages` branch if created by the action)*. 
-    *   *Note: Our workflow uses `upload-pages-artifact`, so normally you just go to Settings > Pages and ensure strict security is set or just wait for the Action to run.*
-    *   Actually, usually you just need to enable Pages.
-    *   **Simpler Instruction**: Go to **Settings** > **Pages**. Set **Source** to **GitHub Actions**.
-4.  The "Deploy Report to Pages" workflow will run automatically.
-5.  Your report will be live at: `https://<username>.github.io/<repo-name>/`
-
----
 *Powered by API Factory.*
