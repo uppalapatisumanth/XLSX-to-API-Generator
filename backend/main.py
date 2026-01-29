@@ -1,6 +1,7 @@
 import os
 import logging
 from fastapi import FastAPI, HTTPException
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from pathlib import Path
@@ -145,6 +146,27 @@ def generate_default_template(path: Path):
         pd.DataFrame(env_data).to_excel(writer, sheet_name='environments', index=False)
 
     logger.info(f"Generated default template at {path}")
+
+# --- Serve Frontend (Static Files) ---
+# Must be AFTER API routes
+frontend_dist = Path(__file__).parent.parent / "frontend" / "dist"
+if frontend_dist.exists():
+    app.mount("/assets", StaticFiles(directory=str(frontend_dist / "assets")), name="assets")
+    
+    # Catch-all for SPA (return index.html for any non-api route)
+    @app.get("/{full_path:path}")
+    async def serve_spa(full_path: str):
+        # Allow API routes to pass through if they weren't caught (though logic-wise, API routes defined above take precedence)
+        if full_path.startswith("api"):
+            raise HTTPException(status_code=404, detail="API route not found")
+        
+        # Check if file exists in dist (e.g. favicon.ico)
+        file_path = frontend_dist / full_path
+        if file_path.exists() and file_path.is_file():
+             return FileResponse(file_path)
+             
+        # Result to index.html
+        return FileResponse(str(frontend_dist / "index.html"))
 
 if __name__ == "__main__":
     import uvicorn
